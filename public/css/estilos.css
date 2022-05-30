@@ -1,12 +1,40 @@
-*{
-    box-sizing: border-box;
+* {
     font-size: 12px;
-    
-    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
 }
 
-.logo{
-    width: 200px;
+header {
+    background-color: #EAC926;
+
+}
+
+header div.logo {
+    width: 50%;
+}
+
+
+header div.logo {
+    padding: 10px;
+}
+
+/*vamos a probar algo*/
+#searching  {
+    width: 50%;
+    padding-left: 2%;
+  
+}
+
+.headerLogoSearch #searching {
+    padding-top: 20px;
+}
+
+
+.headerLogoSearch {
+    display: flex;
+    
 }
 
 #finder {
@@ -15,89 +43,238 @@
 }
 
 
-#searching{
-    display: flex;
-    justify-content: center;
-}
 
 
+#buyCard {
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color:#EAC926;    
-}
-
-
-#compraEnCuotas{    
     display: flex;
     padding-top: 5%;
     justify-content: center;
 }
-    
+
+/*logo de lupa busqueda*/
 
 
-#lastVisit{
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+#lastVisit {
     font-size: 24px;
     display: flex;
-       
+    justify-content: center;
+    color: #666;
 }
 
-.titulares{
+
+.offer {
     font-size: 24px;
 }
 
 
 
+#productImg {
 
-
-#description{
     display: flex;
-    flex-direction: column;       
+    justify-content: center;
+
 }
 
+#description {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+
+main #description #productImg img {
+    width: 100%;
+}
 
 .precio {
     font-size: 18px;
+    text-align: start;
+    color: #666;
+
+
 }
 
-
-.des{
+.productName {
     font-size: 16px;
+    text-align: start;
+    color: #666;
+
 }
 
-#burger-menu{
-    
-    color: blue;
-    font-size: 2em;
+.off {
+
+    font-size: 16px;
+    text-align: start;
+    color: #39b54a;
+
+}
+
+
+
+div.burger-menu {
+    text-align: center;
+
+}
+
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+
+
+
+main #boxDescript {
+    border: 1px solid #ebebeb;
+    background-color: white;
+}
+
+/*caja que contiene descricion de articlo y logo truck*/
+
+
+
+
+main #boxDescript .priceOff {
+    display: flex;
+}
+
+main #boxDescript .priceOff .precio {
+    width: 30%;
+}
+
+main #boxDescript .priceOff .off {
+    width: 70%;
+}
+
+
+
+main #imgTruck {
+    color: #39b54a;
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
-              
-   
+
+}
 
 
 
 
+main i {
+
+
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    top: -15px;
+
+}
 
 
 
 
-     
-
-
-
-
-#imgF{
-    color: blue;
+#imgFoot {
+    color: #0044AA;
     font-size: 2em;
-    margin-top: 10px;    
+    margin-top: 10px;
+    justify-content: center;
 }
 
-#copyR h3 {
+
+#copyR p {
     text-align: start;
-    
+    color: #666;
+
+}
+
+
+#final {
+
+    text-align: center;
+    background-color: white
+}
+
+
+
+footer div h3 {
+    color: #666;
+
+}
+
+footer div p {
+    color: #666;
+
+}
+
+/*parrafos finales debajo de cada titulo de iconos de tarjetas envios gratis y seguridad*/
+
+main #description #productImg{
+    flex :0 0 calc(50% - 1em);
 }
 
 
 
 
+@media(max-width:480px) {
+    #navigation {
+        display: none;
+
+    }
+}
+
+@media(min-width:480px) {
+    #navigation {
+        display: block;
+    }
+}
+
+
+@media(min-width:480px) {
+    div.burger-menu {
+        display: none;
+    }
+}
+
+@media(min-width:480px) {
+    div.burger-menu i {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    main #description #boxDescript .productName {
+        display: none;
+    }
+
+}
+
+@media (min-width:480px) {
+    main #description {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
