@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-size: 12px;
+    
+    
+}
+
+.logo{
+    width: 200px;
+}
+
+#finder {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#searching{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#EAC926;    
+}
+
+
+#compraEnCuotas{    
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+}
+    
+
+
+#lastVisit{
+    font-size: 24px;
+    display: flex;
+       
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+
+
+
+
+#description{
+    display: flex;
+    flex-direction: column;       
+}
+
+
+.precio {
+    font-size: 18px;
+}
+
+
+.des{
+    font-size: 16px;
+}
+
+#burger-menu{
+    
+    color: blue;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+              
+   
+
+
+
+
+
+
+
+
+     
+
+
+
+
+#imgF{
+    color: blue;
+    font-size: 2em;
+    margin-top: 10px;    
+}
+
+#copyR h3 {
+    text-align: start;
+    
+}
+
+
+
+
