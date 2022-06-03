@@ -1,67 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
 * {
     font-size: 12px;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
-}
-
-header {
-    background-color: #EAC926;
-
-}
-
-header div.logo {
-    width: 50%;
 }
 
 
-header div.logo {
-    padding: 10px;
-}
-
-/*vamos a probar algo*/
-#searching  {
-    width: 50%;
-    padding-left: 2%;
+.copy-header{   
+    font-weight:400 ; 
+    display: block;
+    margin: auto;
   
 }
 
-.headerLogoSearch #searching {
-    padding-top: 20px;
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;     
 }
+
 
 
 .headerLogoSearch {
-    display: flex;
-    
+     display: flex;
+     flex-wrap:wrap;
+     padding: 2%;
+     height: 6%;
+     width: 90%;
+     margin: 0 auto; 
+     text-align: center;
+     justify-content: space-between;    
+     align-items: center;
+ }
+
+
+
+header .headerLogoSearch .logo {    
+    width: 50%;   
+    width: 135px;    
+    padding: 10px 10px 10px 0px;
 }
 
-#finder {
-    display: flex;
-    justify-content: flex-start;
+#searching  {
+    width: 50%;
+    padding-left: 2%;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    /*flex-grow: 2%;*/
+  
+}
+
+
+#searching input{
+    width: 50%;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+} 
+
+
+
+#searching .form button{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    outline: none;
+    color: #666;
+    border-radius: 5px;
+    padding: 8px 6px;
+    cursor: pointer;
+}
+
+#searching .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 15%;
 }
 
 
 
 
-#buyCard {
-
-    display: flex;
-    padding-top: 5%;
-    justify-content: center;
+div.burger-menu {
+    text-align: center;
 }
+
+
+div.burger-menu i {
+
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/**/
+
+
+
 
 /*logo de lupa busqueda*/
-
-
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
 
 
 #lastVisit {
@@ -76,23 +127,54 @@ body {
     font-size: 24px;
 }
 
+.main-navBar{
+    display: none;
+}
+
+.main-navBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navBar a{
+    text-decoration: none;
+    color:#222222;
+    display:inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    
+}
+
+
 
 
 #productImg {
 
     display: flex;
     justify-content: center;
-
 }
+
+
+
 
 #description {
 
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
+#description article {
+    flex: 0 1 100%;
+}
+
+
+/*
+#description article{
+    flex: 0 1 100%;
+
+}*/
 
 
 main #description #productImg img {
@@ -103,15 +185,14 @@ main #description #productImg img {
     font-size: 18px;
     text-align: start;
     color: #666;
-
-
 }
 
 .productName {
     font-size: 16px;
     text-align: start;
     color: #666;
-
+    margin-left: 10%;
+    display: none;
 }
 
 .off {
@@ -119,29 +200,7 @@ main #description #productImg img {
     font-size: 16px;
     text-align: start;
     color: #39b54a;
-
 }
-
-
-
-div.burger-menu {
-    text-align: center;
-
-}
-
-
-div.burger-menu i {
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-
-
 
 
 
@@ -154,10 +213,15 @@ main #boxDescript {
 
 
 
-
-main #boxDescript .priceOff {
+main #description #boxDescript .priceOff {
     display: flex;
 }
+
+
+.priceOff{
+    margin-left: 10%;
+}
+
 
 main #boxDescript .priceOff .precio {
     width: 30%;
@@ -173,15 +237,13 @@ main #imgTruck {
     color: #39b54a;
     display: flex;
     justify-content: center;
-
 }
 
 
 
 
-main i {
-
-
+main #description i {
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -190,7 +252,8 @@ main i {
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    right: 20px;
+    left:85% ;
+    
     top: -15px;
 
 }
@@ -229,52 +292,128 @@ footer div h3 {
 footer div p {
     color: #666;
 
-}
-
-/*parrafos finales debajo de cada titulo de iconos de tarjetas envios gratis y seguridad*/
-
-main #description #productImg{
-    flex :0 0 calc(50% - 1em);
-}
+}/*parrafos finales debajo de cada titulo de iconos de tarjetas envios gratis y seguridad*/
 
 
 
 
-@media(max-width:480px) {
-    #navigation {
+
+
+/*tablets*/
+
+@media(min-width:480px){
+
+
+
+     .productName {
+        
+        display:block;
+    }
+   
+
+    header .headerLogoSearch .logo {    
+        width: 50%;   
+        width: 150px;    
+        padding: 10px 10px 10px 0px;
+    }
+
+    .headerLogoSearch{
+        
+        display: flex;
+        justify-content: space-between;
+        width: 100%;  
+        align-items: center;      
+    }
+
+    #searching  {
+        width: 50%;
+        padding-left: 2%;
+        padding-top: 20px;
+        text-align: center;
+        align-items: center;
+        
+      
+    }
+    
+    
+    #searching input{
+        width: 75%;
+        font-size: 12px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 10px;
+    } 
+  
+    
+
+    .copy-header{
+        font-size: 12px;
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burger-menu{
         display: none;
+    }
+
+    .main-navBar{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navBar ul{
+        display: flex;
 
     }
+
+    .main-navBar li{
+        margin: 0 5px;
+
+    }
+
+    
 }
 
-@media(min-width:480px) {
-    #navigation {
-        display: block;
-    }
-}
+/*desktop*/
+@media(min-width:1200px){
 
-
-@media(min-width:480px) {
-    div.burger-menu {
-        display: none;
-    }
-}
-
-@media(min-width:480px) {
-    div.burger-menu i {
-        display: none;
-    }
-}
-
-@media (max-width:480px) {
-    main #description #boxDescript .productName {
-        display: none;
+    .productName {
+        
+        display:block;
     }
 
-}
+    #description   {
+        flex: 0 0 calc(50% - 1em);}
 
-@media (min-width:480px) {
-    main #description {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .headerLogoSearch,  .main-navBar {
+        
+        max-width: 1200px;        
+        margin:auto; 
+        justify-content: space-between;
     }
+
+    .headerLogoSearch{
+        align-items: center;
+    }
+
+    .main-navBar li{
+        margin:0 10px;
+    }
+
+    .main-navBar a {
+        font-size: 17px;
+    }
+
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+   
+    }
+
+
 }
