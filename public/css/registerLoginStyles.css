@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    margin: 20px 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+}
+
+main input {
+    width: 100%;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form {
+    padding: 15% 0;
+    width: 90%;
+}
+
+form.login {
+    height: 70vh;
+    align-items: center;
+}
+
+form section {
+    padding: 10px 0;
+}
+
+form .datos-basicos #fecha-nacimiento {
+    margin-top: 20px;
+}
+
+form .perfil-usuario .check {
+    display: inline-block;
+    margin: 3% 0;
+}
+
+form .perfil-usuario .check input[type="radio"] {
+    text-align: left;
+    width: 50px;
+    margin-bottom: auto;
+}
+
+form .intereses .interes {
+    display: inline-block;
+    margin: 3% 0;
+}
+
+form .intereses .interes input[type="checkbox"] {
+    width: 50px;
+    margin-bottom: auto;
+}
+
+form .button {
+    width: 100%;
+    text-align: center;
+}
+
+form .button button {
+    font-size: 12px;
+    width: 100%;
+    color: #fff;
+    background-color: #0044AA;
+    border: 1px solid #0044AA;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form .button #button {
+    color: #666;
+    background-color: #fff;
+    transition: all 250ms;
+}
+
+form .button #button:hover {
+    color: #fff;
+    background-color: #0044AA;
+    transition: 1s;
+}

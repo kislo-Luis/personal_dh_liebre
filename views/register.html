@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="/css/estilos.css" rel="stylesheet">
+    <link href="/css/registerLoginStyles.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<header class="main-header">
+
+
+    <div class="headerLogoSearch">
+        <!--main header botom bar -->
+
+        <div class="logo">
+            <img src="/img/logo-mercado-liebre.svg" alt="Tu imagen de practica">
+        </div>
+
+
+
+        <div id="searching">
+
+            <div class="form" action="#" method="GET">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+        </div>
+
+        
+
+        <h2 class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+       
+
+
+    </div>
+
+
+
+
+    <nav class="main-navBar">
+
+        <ul class="left-navBar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+
+        <ul class="rigth-Bar">
+            <li><a href="/register.html">Creá tu cuenta<i class="far fa-address-card"></i></a></li>
+            <li><a href="/login.html">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras<i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+
+
+
+    </nav>
+
+    <div class="burger-menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="b-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav>
+            <ul class="compra">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="cuenta">
+                <li><a href="/register.html">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+                <li><a href="/login.html">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+</header>
+
+
+
+
+
+<main>
+    <form action="/" method="GET">
+        <section class="datos-basicos">
+            <div>
+                <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" placeholder="Nombre y apellido" minlength="3" required>
+            </div>
+            <div>
+                <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" minlength="3" required>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div id="fecha-nacimiento">
+                <label for="fecha-nacimiento"> Fecha de Naciemiento</label>
+            </div>
+            <div>
+                <input type="date" name="fecha-nacimiento" required>
+            </div>
+            <div>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div>
+        </section>
+
+        <section class="perfil-usuario">
+            <div><label for="perfil-usuario">Perfil usuario</label></div>
+
+            <div class="check">Comprador<input type="radio" name="perfil-usuario" id="comprador" value="comprador"></div>
+            <div class="check">Vendedor<input type="radio" name="perfil-usuario" id="vendedor" value="vender"></div>
+        </section>
+
+        <section class="intereses">
+            <div><label for="intereses">Intereses</label></div>
+
+            <div class="interes">Electro<input type="checkbox" value="Electro" name="intereses" id="intereses"></div>
+            <div class="interes">Moda<input type="checkbox" value="Moda" name="intereses" id="intereses"></div>
+            <div class="interes"><span>Hogar</span><input type="checkbox" value="Hogar" name="intereses" id="intereses"></div>
+            <div class="interes"><span>Juguetería</span><input type="checkbox" value="Jugueteria" name="intereses" id="intereses"></div>
+            <div class="interes"><span>Vida Sana</span><input type="checkbox" value="Vida Sana" name="intereses" id="intereses"></div>
+        </section>
+
+        <section class="foto">
+            <div><label for="foto-perfil">Foto de perfil</label></div>
+            <div><input type="file" name="foto-perfil" id="foto-perfil"></div>
+        </section>
+
+        <section class="password">
+            <div><label for="pass">Contraseña</label></div>
+            <div><input type="password" name="contraseña" id="pass" placeholder="Elegí tu contraseña" minlength="8" required></div>
+            <div><input type="password" name="confirmar-contraseña" id="confirm-pass" placeholder="Confirmá tu contraseña elegida" required></div>
+        </section>
+
+        <div class="button"><button href="/" type="send">Enviar</button></div>
+
+
+    </form>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+    
+</body>
+</html>
