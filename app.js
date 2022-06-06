@@ -2,8 +2,9 @@ const express = require('express')
 const app = express() 
 const path = require('path') 
 
-const port = process.env.PORT || 8080;
 
+//server run in port:
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
 });
@@ -11,7 +12,10 @@ app.listen(port, () => {
 
 app.use(express.urlencoded({extended:false}));
 
-app.use(express.static('public'));
+//static
+app.use(express.static(path.join(__dirname,'public')));
+
+//rutas
 
 app.get('/', (req, res)=>res.sendFile(path.join(__dirname,'views/home.html'))); 
 
