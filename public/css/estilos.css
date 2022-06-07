@@ -24,19 +24,19 @@ nav li {
     display: block;
 }
 
-#description :first-child {
+/* #description :first-child {
     display: block;
 
-}
+} */
 
 #description article:hover .productName {
     display: block;
 
 }
 
-#description article {
+/* #description article {
     display: none;
-}
+} */
 
 #description article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -296,6 +296,7 @@ main #boxDescript .priceOff .precio {
 
 main #boxDescript .priceOff .off {
     width: 70%;
+    margin-left: 1em;
 }
 
 #imgTruck:hover {
@@ -491,9 +492,9 @@ footer div p {
         margin-bottom: 1em;
     }
 
-    #description :first-child {
+    /* #description :first-child {
         display: block
-    }
+    } */
 
   
 
